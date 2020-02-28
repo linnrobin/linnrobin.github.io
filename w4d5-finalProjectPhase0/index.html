@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="style.css" rel ="stylesheet" style = "text/css">
+        <title>Rekap Pesanan</title>
+    </head>
+    <body>
+        <div class = "row"></div>
+            <div class = "column">
+                <div class = "row-dalam">
+                    <div class = "row-dalam-judul">
+                        <h1> Total Customer: <div id = "count-customer" class = "count">0</div></h1>
+                        <div id = "tambah-customer-id">
+                            <form id = "tambah-customer-form" action = "#">
+                                <input id = "nama-customer" type ="text" placeholder="Isi Nama Customer" autocomplete="off"></input>
+                                <input id = "submit-customer" type ="submit" Value="Tambah Customer Baru"></input> 
+                            </form>
+                        </div>
+                    </div>
+                    <div id = "customer-list" class = "row-dalam-list"> 
+                        <h2>Customer List:</h2>
+                    </div>
+                </div>
+                <div class = "row-dalam">
+                    <div class = "row-dalam-judul">
+                        <h1> Total Jenis Barang: <div id = "count-jenis-barang" class = "count">0</div></h1>
+                        <div id = "tambah-barang-id">
+                            <form id = "tambah-barang-form" action = "#">
+                                <input id = "nama-barang" type ="text" placeholder ="Isi Nama Barang"></input>
+                                <input id = "harga-barang" type="number" placeholder ="Isi Harga Barang"></input>
+                                <input id = "submit-barang" type="submit" value="Tambah Barang"></input>
+                            </form>
+                        </div>
+                    </div>
+                    <div id = "barang-list" class = "row-dalam-list">
+                        <h2>Barang List:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "row-dalam-judul">
+                    <h1> Total Pesanan: <div id = "count-pesanan" class = "count">0</div></h1>
+                    <div id = "tambah-pesanan-id">
+                        <form id = "tambah-pesanan-form" action = "#">
+                            <label for = "tambah-pesanan-nama">Tambah Customer <br></label>
+                            <select id = "tambah-pesanan-nama"></select><br>
+                                <label for = "tambah-pesanan-barang">Tambah Barang<br></label>
+                                <div id = "tambah-pesanan-baris">
+                                    <select id = "tambah-pesanan-barang">
+                                    </select>
+                                    <input class = "jumlah_barang" id = "jumlah-barang" type ="number" placeholder ="jumlah" autocomplete="off"></input><br>
+                                </div>
+                            <input id = "tambah-baris-barang" type="button" value="Tambah Baris Barang"></input>
+                            <input id = "submit-pesanan" type ="submit" value="Tambah Pesanan Baru"></input>
+                        </form>
+                    </div>
+                </div>
+                <div id="list-pesanan" class = "row-dalam-list">
+
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "row-dalam-judul">
+                    <h1> Total Pembelian: <div id = "count-pembelian" class = "count">0</div></h1>
+                    <div id = "tambah-pembelian-id">
+                        <form id = "tambah-pembelian-form" action = "#">
+                            <label for = "tambah-pembelian-barang">Tambah Pembelian<br></label>
+                            <div id = "tambah-pembelian-baris">
+                                <select id = "tambah-pembelian-barang">
+                                </select>
+                                <input class = "jumlah_barang" id = "stok-barang" type ="number" placeholder ="stok" autocomplete="off"></input><br>
+                            </div>
+                            <input id = "tambah-baris-barang" type="button" value="Tambah Baris Barang"></input>
+                            <input id = "submit-pembelian" type ="submit" value="Tambah Pembelian Baru"></input>
+                        </form>
+                    </div>
+                </div>
+                <div id = "list-pembelian" class = "row-dalam-list">
+                
+                </div>
+            </div>
+    <script src = "script.js"></script>        
+    </body>
+</html>

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.column {
+    float: left;
+    width: 33%;
+    border: 1px solid lightpink;
+    height: 95vh;
+}
+
+.row:after {
+    content: "";
+    /* display: table; 
+    clear: both; */
+}
+
+.row-dalam {
+    height: 50%;
+    background-color: blue;
+}
+
+.row-dalam-judul {
+    min-height: 30%;
+    background-color: gold;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.row-dalam-list {
+    min-height: 70%;  
+    background-color: lightpink;
+    margin: 0;
+    padding: 0 10px;
+    overflow-y: scroll;
+    height: 100px;
+}
+
+.jumlah_barang {
+    width: 55px;
+}
+
+.count{
+    float: right;
+    padding-right: 20px
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding-left: 0;
+    margin: 0;
+}
+
+h5, h6 {
+    padding-top: 10px;
+}
